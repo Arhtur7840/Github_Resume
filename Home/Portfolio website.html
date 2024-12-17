@@ -19,23 +19,27 @@
             font-weight: 100;
             font-style: normal;
         }
+        /*Header of the Webpage*/
         .header{
             color: black;
             background-color: #eff0f1;
-            padding: 0.67em 1em 0em 1em;
-            height: 10vh;
+            padding: 0.4em 1em 0.7em 1em;
+            height: fit-content;
             width: 1fr;
             display: flex;
             flex-direction: row;
             align-content: center;
             justify-content: space-between;
         }
+        .logo{
+            display: flex;
+            flex-direction: row;
+        }
         .header ul{
             display: flex;
             flex-direction: row;
             align-content: center;
-            justify-content: space-between;
-            width: 15%;
+            justify-content: flex-end;
         }
         .header li{
             list-style-type: none;
@@ -44,6 +48,7 @@
             color: black;
             text-decoration: none;
         }
+        /*Main body of the Webpage*/
         .welcomesign{
             text-align: center;
         }
@@ -64,6 +69,7 @@
             margin: 1em 1em 0em 1em;
             padding: 0.67em 0.67em 0.67em 0.67em;
         }
+        /*Footer of the Webpage*/
         .footer{
             text-align: center;
             background-color: #eff0f1;
@@ -72,18 +78,46 @@
             margin-top: 27vh;
             padding: 1em 0em 1em 0em;
         }
+        /*Media qery of the Webpage*/
+        @media(max-width: 800px){
+            body{
+                height: fit-content;
+            }
+            /*Header of the Webpage*/
+            .header{
+            height: fit-content;
+            flex-direction: column;
+            }
+            .logo{
+                flex-direction: column;
+            }
+            .header ul{
+                flex-direction: column;
+            }
+            /*Main body of the Webpage*/
+            .biggerbox{
+                flex-direction: column;
+                width: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
+    <!--Header of the Webpage-->
     <div class="header">
-        <h2> Arthur David </h2>
+        <div class="logo">
+            <img src="Logo.png" alt="Logo" width="100vw" height="100vh">
+            <h2> Arthur David </h2>
+        </div>
         <ul>
-            <li><a href="" target="_self">Home</a></li>
-            <li><a href="" target="_self">About</a></li>
-            <li><a href="" target="_self">Projects</a></li>
-            <li><a href="" target="_self">Contact</a></li>
+            <li><a href="Portfolio website.html" target="_self">Home</a></li>
+            <li><a href="../About/Resume.html" target="_self">About</a></li>
+            <li><a href="../Projects/Projects.html" target="_self">Projects</a></li>
+            <li><a href="../Contact/Contact.html" target="_self">Contact</a></li>
         </ul>
     </div>
+
+    <!--Body of the Webpage-->
     <div class="welcomesign">
         <h1> Welcome to My Portfolio </h1>
         <p>Coding Student | Web Developer | Problem solver</p>
@@ -118,6 +152,8 @@
         <h2>Hi, my name is Arthur (David) de Souza Simoes</h2>
         <p>I am a Latino American guy that was born in Brazil, I grew up 17 years of my life there and have lots of good memories about the place. There I studied in private schools because my father and my mother worked hard to get me into those schools, I studied at the schools: Colegio Estrela da Manha, Colegio Cidade Jardim Cumbica, and Colegio Paulo Freire. At 14, my family moved to the U.S where I am doing highschool until today, and developing my professionals skills at West-MEC.</p>
     </div>
+
+    <!--Footer of the Webpage-->
     <footer class="footer">
         <p>&copy Arthur David. All rights reserved to.</p>
     </footer>
