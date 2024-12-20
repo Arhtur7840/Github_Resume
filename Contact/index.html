@@ -42,6 +42,7 @@
             justify-content: flex-end;
         }
         .header li{
+            padding-right: 1rem;
             list-style-type: none;
         }
         .header a{
@@ -54,7 +55,23 @@
             color: black;
             text-align: center;
             border-radius: 2rem;
-            margin: 0% 32% 0% 32%;
+            padding: 1rem 0rem 1rem 0rem;
+            margin: 1rem 32% 1rem 32%;
+        }
+        .Contact{
+            background-color: #eff0f1;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            border-radius: 2rem;
+            padding: 1rem 1rem 1rem 1rem;
+            margin: 1rem 32% 0% 32%;
+        }
+        .Contact textarea{
+            max-width: auto;
+            height: 100px;
+            resize: none;
         }
         /*Footer of the webpage*/
         .footer{
@@ -63,7 +80,7 @@
             color: black;
             width: 1fr;
             padding: 1rem 0rem 1rem 0rem;
-            margin-top: 30rem;
+            margin-top: 26rem;
         }
         /*Media Query of the webpage*/
         @media(max-width: 800px){
@@ -86,10 +103,13 @@
             .contact{
                 margin: 0% 0% 0% 0%;
             }
+            .Contact{
+                margin: 1rem 0% 0% 0%;
+            }
             /*Footer of the webpage*/
             .footer{
                 padding: 1rem 0rem 1rem 0rem;
-                margin-top: 13.1rem;
+                margin-top: 5rem;
             }
         }
     </style>
@@ -108,7 +128,7 @@
             <li><a href="index.html" target="_self">Contact</a></li>
         </ul>
     </div>
-    <!--Bodyn of the Webpage-->
+    <!--Body of the Webpage-->
     <div class="contact">
         <h1>Contact info:</h1>
         <ul>
@@ -116,6 +136,18 @@
             <li> Phone number: +1 (480) 876-6595 </li>
             <li> Working location: Central Campus 6997 N. Glen Harbor Boulevard Glendale, AZ 85307 </li>
         </ul>
+    </div>
+    <div class="Contact">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br>
+        <label for="email">E-mail/G-mail</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        <label for="text">Message</label>
+        <textarea name="text" id="text" placeholder="Send a message" ></textarea>
+        <br>
+        <input type="submit" id="button">
     </div>
     <!--Footer of the Webpage-->
     <footer class="footer">

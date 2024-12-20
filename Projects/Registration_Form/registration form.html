@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body{
+            margin: unset;
+            background-color: darkblue;
+        }
+        .outercontainer{
+            background-color: antiquewhite;
+            width: 75%;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        /*Conatiner 1*/
+        .container{
+            border-radius: 10px;
+            margin: 0em 0.67em 0em 0.67em;
+            background-color: white;
+        }
+        .container h1, p{
+            text-align: center;
+            color: white;
+        }
+        .container h1{
+            color: blue;
+        }
+        .boxesfornames{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        #1{
+            grid-column: span 1;
+        }
+        #2{
+            grid-column: span 2;
+        }
+        input[type=text]{
+            width: 100%;
+        }
+        .restofboxes{
+            display: flex;
+            flex-direction: column;
+        }
+        /*Container 2*/
+        .container2{
+            border-radius: 10px;
+            margin: 0em 0.67em 0em 0.67em;
+            background-color: white;
+        }
+        .container2 h1{
+            text-align: center;
+            color: blue;
+        }
+        #colorpreferences{
+            color: black;
+            text-align: start;
+        }
+        .direction li{
+            list-style-type: none;
+        }
+        /*Container 3*/
+        .container3{
+            border-radius: 10px;
+            margin: 0em 0.67em 0em 0.67em;
+            background-color: white;
+        }
+        .container3 h1{
+            text-align: center;
+            color: blue;
+        }
+        #myRange{
+            width: 100%;
+        }
+        .textarea{
+            display: flex;
+            justify-content: center;
+        }
+        textarea{
+            width: 97%;
+            height: 3em;
+            padding: 0.67em 0em 0.67em 0em;
+            resize: none;
+        }
+        .imageupload{
+            padding: 0.67em 0.67em 0.67em 0.67em;
+            border: 3px solid black;
+        }
+        /*Read button*/
+        #read{
+            margin: 0em 0.67em 0em 0.67em;
+        }
+        /*Submit button*/
+        #submit{
+            background-color: blue;
+            color: white;
+            width: 100%;
+            margin: 0.67em 0em 0.67em 0em;
+            padding: 1em 0em 1em 0em;
+            text-align: center;
+            border-radius: 10px;
+        }
+        textarea{
+            width:100%;
+            resize:vertical;
+        }
+    </style>
+</head>
+<body>
+    <!--Outer container-->
+    <div class="outercontainer">
+        <!--Container 1-->
+        <div class="container">
+            <h1>
+                Adventure Travel club
+            </h1>
+            <P>
+                Begin your journey with fellow adventurers.
+            </P>
+            <div class="boxesfornames">
+                <div id="1">
+                    <label for="name">First name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your first name" required>
+                </div>
+                <div id="2">
+                    <label for="name">Last name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your last name" required>
+                </div>
+            </div>
+            <div class="restofboxes">
+                <label for="Email">Gmail</label>
+                <input type="text" id="Email" name="Email" placeholder="Enter your Email/Gmail" required>
+                <label for="age">Date of birth</label>
+                <input type="date" id="age" name="age" placeholder="Enter your age" min="18" required>
+            </div>
+        </div>
+        <!--Container 2-->
+        <div class="container2">
+            <h1>
+                Adventure preferences
+            </h1>
+            <div class="restofboxes">
+                <label for="experience">Experience level</label>
+                <select id="experience" name="experience" placeholder="Enter your experience level"  required>
+                    <option value="5">Advanced</option>
+                    <option value="4">Experienced</option>
+                    <option value="3">Normal</option>
+                    <option value="2">Unexperienced</option>
+                    <option value="1">Begginer</option>
+                </select>
+                <div>
+                    <p id="colorpreferences">Prefered activities</p>
+                    <div class="direction">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="preferences" name="preferences">
+                                <label for="preferences">Hiking</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="preferences" name="preferences">
+                                <label for="preferences">Rock climbing</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="preferences" name="preferences">
+                                <label for="preferences">Kayaking</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="preferences" name="preferences">
+                                <label for="preferences">Scuba diving</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p id="colorpreferences">Preffered Trip Duration</p>
+                    <div class="direction">
+                        <ul>
+                            <li>
+                                <input type="radio" id="PTD" name="WET" required>
+                                <label for="PTD">Weekend Trips (2-3 days)</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="PTD" name="WET" required>
+                                <label for="PTD">Week-long Adventures (5-7 days)</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="PTD" name="WET" required>
+                                <label for="PTD">Extended Expeditions (2+ weeks)</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Container 3-->
+        <div class="container3">
+            <h1>
+                Additional Information
+            </h1>
+            <p id="colorpreferences">Fitness level (1-10)</p>
+            <input type="range" min="1" max="10" value="10" class="slider" id="myRange">
+            <p id="colorpreferences">Tell us about yourself</p>
+            <div class="textarea">
+                <textarea rows="5" cols="5">
+                    Share your adventure experiences and what excites you about joining our club...
+                </textarea>
+            </div>
+            <p id="colorpreferences">Profile Photo</p>
+            <div class="imageupload">
+                <form>
+                    <input type="file" id="myFile" name="filename">
+                </form>
+            </div>
+        </div>
+        <!--Checkbox-->
+        <input type="checkbox" id="read" name="read" required>
+        <label for="read"> I agree to the terms and conditions and Privacy Policy</label>
+        <!--Submit button-->
+        <div>
+            <input type="submit" id="submit">
+        </div>
+    </div>
+</body>
+</html>
