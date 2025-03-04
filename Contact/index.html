@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Contact/contact page</title>
+    <style>
+         :root{
+            font-size: 16px;
+        }
+        body{
+            background-color: rgb(176,182,180);
+            height: 100vh;
+            margin: unset;
+            font-family: "Roboto", serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+        /*Header of the Webpage*/
+        .header{
+            color: black;
+            background-color: #eff0f1;
+            padding: 0.4em 1em 0.7em 1em;
+            height: fit-content;
+            width: 1fr;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-between;
+        }
+        .logo{
+            display: flex;
+            flex-direction: row;
+        }
+        .header ul{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: flex-end;
+        }
+        .header li{
+            padding-right: 1rem;
+            list-style-type: none;
+        }
+        .header a{
+            color: black;
+            text-decoration: none;
+        }
+        /*Body of the Webpage*/
+        .contact{
+            background-color: #eff0f1;
+            color: black;
+            text-align: center;
+            border-radius: 2rem;
+            padding: 1rem 0rem 1rem 0rem;
+            margin: 1rem 32% 1rem 32%;
+        }
+        .Contact{
+            background-color: #eff0f1;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            border-radius: 2rem;
+            padding: 1rem 1rem 1rem 1rem;
+            margin: 1rem 32% 0% 32%;
+        }
+        .Contact textarea{
+            max-width: auto;
+            height: 100px;
+            resize: none;
+        }
+        /*Footer of the webpage*/
+        .footer{
+            text-align: center;
+            background-color: #eff0f1;
+            color: black;
+            width: 1fr;
+            padding: 1rem 0rem 1rem 0rem;
+            margin-top: 26rem;
+        }
+        /*Media Query of the webpage*/
+        @media(max-width: 800px){
+            body{
+                height: fit-content;
+            }
+            /*Header of the Webpage*/
+            .header{
+            height: fit-content;
+            flex-direction: column;
+            }
+            .logo{
+                flex-direction: column;
+            }
+            .header ul{
+                flex-direction: column;
+                align-content: center;
+            }
+            /*Body of the Webpage*/
+            .contact{
+                margin: 0% 0% 0% 0%;
+            }
+            .Contact{
+                margin: 1rem 0% 0% 0%;
+            }
+            /*Footer of the webpage*/
+            .footer{
+                padding: 1rem 0rem 1rem 0rem;
+                margin-top: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Header of the Webpage-->
+    <div class="header">
+        <div class="logo">
+            <img src="Logo.png" alt="Logo" width="100vw" height="100vh">
+            <h2> Arthur David </h2>
+        </div>
+        <ul>
+            <li><a href="../index.html" target="_self">Home</a></li>
+            <li><a href="../About/index.html" target="_self">About</a></li>
+            <li><a href="../Projects/index.html" target="_self">Projects</a></li>
+            <li><a href="index.html" target="_self">Contact</a></li>
+        </ul>
+    </div>
+    <!--Body of the Webpage-->
+    <div class="contact">
+        <h1>Contact info:</h1>
+        <ul>
+            <li> email: arthurdavidsouzasimoes@gmail.com </li>
+            <li> Phone number: +1 (480) 876-6595 </li>
+            <li> Working location: Central Campus 6997 N. Glen Harbor Boulevard Glendale, AZ 85307 </li>
+        </ul>
+    </div>
+    <div class="Contact">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br>
+        <label for="email">E-mail/G-mail</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        <label for="text">Message</label>
+        <textarea name="text" id="text" placeholder="Send a message" ></textarea>
+        <br>
+        <input type="submit" id="button">
+    </div>
+    <!--Footer of the Webpage-->
+    <footer class="footer">
+        <a href="https://github.com/Arhtur7840">
+            <img src="github-mark.png" alt="Github link" height="100px" width="100px"/>
+        </a>
+        <p>&copy Arthur David. All rights reserved to.</p>
+    </footer>
+</body>
+</html>

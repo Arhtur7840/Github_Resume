@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume/Projects page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            font-size: 16px;
+        }
+        body{
+            background-color: rgb(176,182,180);
+            height: 100vh;
+            margin: unset;
+            font-family: "Roboto", serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+        /*Header of the Webpage*/
+        .header{
+            color: black;
+            background-color: #eff0f1;
+            padding: 0.4em 1em 0.7em 1em;
+            height: 12vh;
+            width: 1fr;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-between;
+        }
+        .logo{
+            display: flex;
+            flex-direction: row;
+        }
+        .header ul{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: flex-end;
+        }
+        .header li{
+            padding-right: 1rem;
+            list-style-type: none;
+        }
+        .header a{
+            color: black;
+            text-decoration: none;
+        }
+        /*Body of the Webpage*/
+        .menu_of_projects{
+            margin: 0.67rem 2rem 0.67rem 2rem;
+            padding: 2rem 2rem 2rem 2rem;
+            width: 1fr;
+            border-radius: 10px;
+            background-color: #eff0f1;
+            color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .projects{
+            background-color: #3e3323;
+            color: #eff0f1;
+            margin-top: 1rem;
+            padding: 2rem 2rem 2rem 2rem;
+            width: fit-content;
+            height: fit-content;
+        }
+        /*Footer of the Webpage*/
+        .footer{
+            text-align: center;
+            background-color: #eff0f1;
+            color: black;
+            width: 1fr;
+            margin-top: 3vh;
+            padding: 1em 0em 1em 0em;
+        }
+        /*Media query of the Webpage*/
+        @media(max-width: 800px){
+            body{
+                height: fit-content;
+            }
+            /*Header of the Webpage*/
+            .header{
+                flex-direction: column;
+                height: fit-content;
+            }
+            .logo{
+                flex-direction: column;
+            }
+            .header ul{
+                flex-direction: column;
+            }
+            /*Main body of the Webpage*/
+            .projects{
+                padding: 2rem 0.67rem 2rem 0.67rem;
+                width: 125PX;
+                height: 200px;
+            }
+            .projects img{
+                width: 125px;
+                height: 175PX;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Header of the Webpage-->
+    <div class="header">
+        <div class="logo">
+            <img src="Logo.png" alt="Logo" width="100vw" height="100vh">
+            <h2> Arthur David </h2>
+        </div>
+        <ul>
+            <li><a href="../index.html" target="_self">Home</a></li>
+            <li><a href="../About/index.html" target="_self">About</a></li>
+            <li><a href="index.html" target="_self">Projects</a></li>
+            <li><a href="../Contact/index.html" target="_self">Contact</a></li>
+        </ul>
+    </div>
+
+    <!--Menu of projects of the Webpage-->
+    <div class="menu_of_projects">
+        <!-- Template for projects.
+            <div class="projects">
+                <a href="" target="_self">
+                    <img src="" alt="" width="300px" height="400px"/>
+                </a>
+                <p>
+                    Cozy Eats Project.
+                </p>
+            </div>
+        -->
+        <div class="projects">
+            <a href="Cozy_eats_(project).html/Cozy Eats.html" target="_self">
+                <img src="Cozy_eats_(project).html/classic-burger.png" alt="Cozy eats project" width="300px" height="400px"/>
+            </a>
+            <p>
+                Cozy Eats Project.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="Famous_landmarks/Famous landmarks.html" target="_self">
+                <img src="Famous_landmarks/De louvre.jpg" alt="Famous_landmarks project" width="300px" height="400px"/>
+            </a>
+            <p>
+                Famous Landmarks Project.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="Modern_resume/Modern-resume-responsive.html" target="_self">
+                <img src="Modern_resume/Profile Picture True.jpg" alt="Modern-resume-responsive project" width="300px" height="300px"/>
+            </a>
+            <p>
+                Modern-resume-responsive Project.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="Navigation_site/Navigation.html" target="_self">
+                <img src="Navigation_site/about.jpeg" alt="Navigation_site project" width="300px" height="400px"/>
+            </a>
+            <p>
+                Navigation_site Project.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="Product_comparison/Product Comparison.html" target="_self">
+                <img src="Product_comparison/Product_Comparison.png" alt="Product_Comparison project" width="300px" height="400px"/>
+            </a>
+            <p>
+                Product_comparison Project.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="Products_catalogue/Product catalogue.html" target="_self">
+                <img src="Products_catalogue/Product_Catalogue.png" alt="Product_Catalogue project" width="300px" height="400px"/>
+            </a>
+            <p>
+                Products_catalogue Project.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="Registration_Form/registration form.html" target="_self">
+                <img src="Registration_Form/Registration_Form.png" alt="Registration_Form project" width="300px" height="400px"/>
+            </a>
+            <p>
+                Registration_Form Project.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="Library Book Management System/index.html" target="_self">
+                <img src="Library Book Management System/Library_Management.png" alt="Library Management Project" width="300px" height="400px"/>
+            </a>
+            <p>
+                Library Management Project.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="Task_Manager/index.html" target="_self">
+                <img src="Task_Manager/Task_Manager.png" alt="Task Manager Project" width="300px" height="400px"/>
+            </a>
+            <p>
+                Task Manager Project.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="Profile_Card_Web_App/index.html" target="_self">
+                <img src="Profile_Card_Web_App/Profile_WebCard.png" alt="Profile Web Card Project" width="300px" height="400px"/>
+            </a>
+            <p>
+                Profile Card Project.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="Budget_Planner/index.html" target="_self">
+                <img src="Budget_Planner/Thumbnail.png" alt="Budget Planner Project" width="300px" height="400px"/>
+            </a>
+            <p>
+                Budget Planner Project.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="Student_finder/index.html" target="_self">
+                <img src="Student_finder/Thumbnail.png" alt="Student Finder" width="300px" height="400px"/>
+            </a>
+            <p>
+                Student finder Project.
+            </p>
+        </div>
+        <div class="projects">
+            <a href="Interactive_Shopping_List/index.html" target="_self">
+                <img src="Interactive_Shopping_List/Thumbnail.png" alt="Interactive Shopping List" width="300px" height="400px"/>
+            </a>
+            <p>
+                Interactive Shopping list Project.
+            </p>
+        </div>
+    </div>
+
+    <!--Footer of the Webpage-->
+    <footer class="footer">
+        <a href="https://github.com/Arhtur7840">
+            <img src="github-mark.png" alt="Github link" height="100px" width="100px"/>
+        </a>
+        <p>&copy Arthur David. All rights reserved to.</p>
+    </footer>
+</body>
+</html>

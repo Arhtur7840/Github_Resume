@@ -1,0 +1,29 @@
+:root
+{
+    font-size: 16px;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../Main_Game/Sonic_Super_Adventure/public/graphics/chemical-bg.png');
+    background-size: cover;
+    text-align: center;
+    margin: none;
+
+}
+button
+{
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 1000;
+    color: yellow;
+    background-color: none;
+}
+a
+{
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 1000;
+    color: yellow;
+}

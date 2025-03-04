@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Resume/About page</title>
+    <style>
+        :root{
+            font-size: 16px;
+        }
+        body{
+            background-color: rgb(176,182,180);
+            height: 100vh;
+            margin: unset;
+            font-family: "Roboto", serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+        /*Header of the Webpage*/
+        .header{
+            color: black;
+            background-color: #eff0f1;
+            padding: 0.4em 1em 0.7em 1em;
+            height: fit-content;
+            width: 1fr;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-between;
+        }
+        .logo{
+            display: flex;
+            flex-direction: row;
+        }
+        .header ul{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: flex-end;
+        }
+        .header li{
+            padding-right: 1rem;
+            list-style-type: none;
+        }
+        .header a{
+            color: black;
+            text-decoration: none;
+        }
+        /*Overall layout of the Webpage*/
+        h1, h2{
+            text-align: center;
+        }
+        /*Body of the Resume*/
+        .Resume_container{
+            margin: 0.67rem 10rem 0.67rem 10rem;
+            padding: 2rem 15rem 2rem 15rem;
+            width: 1fr;
+            border-radius: 10px;
+            background-color: #eff0f1;
+            color: black;
+        }
+        .introduction{
+            margin: 1rem 0rem 0rem 0rem;
+            text-align: center;
+            line-break: auto;
+            line-height: 2rem;
+        }
+        .paragraph_1{
+            line-height:  -5rem;
+        }
+        #list ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+        #list li{
+            padding: 0rem -1rem 0rem -1rem;
+        }
+        .Employment ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+        .Employment li{
+            padding: 0rem -1rem 0rem -1rem;
+        }
+        .Extracurricular ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+        .Extracurricular li{
+            padding: 0rem -1rem 0rem -1rem;
+        }
+        /*Footer of the Webpage*/
+        .footer{
+            text-align: center;
+            background-color: #eff0f1;
+            color: black;
+            width: 1fr;
+            padding: 1em 0em 1em 0em;
+        }
+        /*Media Query of the Webpage*/
+        @media(max-width: 800px){
+            body{
+                height: fit-content;
+            }
+            /*Header of the Webpage*/
+            .header{
+            height: fit-content;
+            flex-direction: column;
+            }
+            .logo{
+                flex-direction: column;
+            }
+            .header ul{
+                flex-direction: column;
+                align-content: center;
+            }
+            .Resume_container{
+            margin: 0.67rem 0rem 0.67rem 0rem;
+            padding: 2rem 0rem 2rem 0rem;
+            }
+            #list ul{
+            flex-direction: column;
+            }
+            #list li{
+                padding: 0rem -1rem 0rem -1rem;
+            }
+            .Employment ul{
+            flex-direction: column;
+            }
+            .Employment li{
+                padding: 0rem -1rem 0rem -1rem;
+            }
+            .Extracurricular ul{
+            flex-direction: column;
+            }
+            .Extracurricular li{
+                padding: 0rem -1rem 0rem -1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Header of the website-->
+    <div class="header">
+        <div class="logo">
+            <img src="Logo.png" alt="Logo" width="100vw" height="100vh">
+            <h2> Arthur David </h2>
+        </div>
+        <ul>
+            <li><a href="../index.html" target="_self">Home</a></li>
+            <li><a href="index.html" target="_self">About</a></li>
+            <li><a href="../Projects/index.html" target="_self">Projects</a></li>
+            <li><a href="../Contact/index.html" target="_self">Contact</a></li>
+        </ul>
+    </div>
+    <!--Body of the Resume-->
+    <div class="Resume_container">
+        <div class="introduction">
+            <h1>
+                Arthur Souza Simoes (S.Simões)
+            </h1>
+            <p>Surprise, Arizona 85387</p>
+            <p>
+                C: 480.876.6595| E: secundariaarthur@gmail.com
+            </p>
+        </div>
+        <div class="paragraph_1">
+            <h2>Professional Statement:</h2>
+            <p>I am a person of adaptability to many situations who is also very organized. I am in my first year of West-MEC, CTE coding, I have had experience with HTML5, CSS, JavaScript, and C# until now. I am not exactly in search of any specific type of job, but I am searching for something that would be more stable and safe since it is better for my personal life, and plans.</p>
+        </div>
+        <br>
+        <div>
+            <h2>Knowledge, Skills, and Abilities:</h2>
+            <p>
+                - Time Management — Managing one's own time and the time of others.
+            </p>
+            <p>
+                - Active Learning — Understanding the implications of new information for both current and future problem-solving and decision-making.
+            </p>
+            <p>
+                - Complex Problem Solving — Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions.
+            </p>
+            <p>
+                - Judgment and Decision Making — Considering the relative costs and benefits of potential actions to choose the most appropriate one.
+            </p>
+            <p>
+                - Organization - I am a person with great organization skills, also having great abilities to organize plans and not overthinking.
+            </p>
+            <br>
+        </div>
+        <br>
+        <div>
+            <h2>Certifications & Licenses:</h2>
+            <p>
+                - Information Technology Specialist OD 306 HTML5
+            </p>
+            <p>
+                - Visual Design using Adobe Photoshop
+            </p>
+        </div>
+        <div>
+            <h2>Education:</h2>
+            <div id="list">
+                <ul>
+                    <li>Valley Vista High School</li>
+                    <li>Surprise, AZ</li>
+                    <li>Expected Grad Date: May 2026.</li>
+                </ul>
+            </div>
+            <p>Relevant Coursework: Graphic Design 1-4, AP Physics, College Algebra.</p>
+        </div>
+        <div>
+            <h3>West-MEC Coding Program</h3>
+            <p>This two-year program teaches students how to design and develop software, build apps and write and test computer code.</p>
+        </div>
+        <div class="Employment">
+            <h2>
+                Employment & Experience:
+            </h2>
+
+
+            <ul>
+                <li>West-MEC</li>
+                <li>Glendale, AZ</li>
+                <li>12/10.</li> 
+            </ul>
+            <p>
+                Presenter.
+            </p>
+            <p>
+                Responsibilities include: I helped to talk to the visitors of the open house about what the course was like, and show each one of my projects.
+            </p>
+            
+
+            <ul>
+                <li>West-MEC</li>
+                <li>Glendale, AZ</li>
+                <li>12/10.</li> 
+            </ul>
+            <p>
+                Presenter
+            </p>
+            <p>
+                Responsibilities include: I helped to present what the program was like again to people, and I prepared even cooler projects, like my Unity template for a 2D project.
+            </p>
+        </div>
+        <div class="Extracurricular">
+            <h2>Extracurricular & Volunteer Activities:</h2>
+            <ul>
+                <li><b>West-MEC</b></li>
+                <li>10/25.</li>
+            </ul>
+            <p>
+                I helped in the event to organize and decorate the Halloween event, that was for the local community to come and have fun.
+            </p>
+        </div>
+    </div>
+    <!--Footer of the wbesite-->
+    <footer class="footer">
+        <a href="https://github.com/Arhtur7840">
+            <img src="github-mark.png" alt="Github link" height="100px" width="100px"/>
+        </a>
+        <p>&copy Arthur David. All rights reserved to.</p>
+    </footer>
+</body>
+</html>
