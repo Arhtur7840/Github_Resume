@@ -156,7 +156,7 @@ export default function game(){
             sonic.play("jump");
             sonic.jump();
             airtime += 1;
-            gameSpeed += 50 * airtime;
+            gameSpeed += 100 * airtime;
             score += ((50 + rings) * scoremultiplier);
             if(airtime > 0){
                 score += ((50 + rings) * scoremultiplier * airtime);
@@ -177,7 +177,7 @@ export default function game(){
             return;
         };
         k.play("hurt", { volume: 0.5 });
-        gameSpeed -= 100;
+        gameSpeed -= 300;
         rings -= 70;
         if(rings <= 0){
             rings = 0;
