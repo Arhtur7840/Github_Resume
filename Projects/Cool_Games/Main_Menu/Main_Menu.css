@@ -6,7 +6,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    background-image: url('../Main_Game/Sonic_Super_Adventure/public/graphics/chemical-bg.png');
+    background-image: url('chemical-bg.png');
     background-size: cover;
     text-align: center;
     margin: none;
